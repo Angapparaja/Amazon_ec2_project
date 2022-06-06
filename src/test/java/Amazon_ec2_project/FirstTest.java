@@ -13,7 +13,7 @@ public class FirstTest {
 	@Test
 	public void OpenBrowser() {
 		WebDriver driver;
-		System.setProperty("webDriver.chrome.driver","/usr/bin/chromedriver");
+		System.setProperty("webDriver.chrome.driver"," /usr/bin/google-chrome");
 		ChromeOptions option =new ChromeOptions();
 		option.addArguments("headless");
 		driver=new ChromeDriver();
