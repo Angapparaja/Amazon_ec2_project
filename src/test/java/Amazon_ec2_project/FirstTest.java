@@ -15,8 +15,12 @@ public class FirstTest {
 		WebDriver driver;
 		System.setProperty("webDriver.chrome.driver"," /usr/bin/google-chrome");
 		ChromeOptions option =new ChromeOptions();
-		option.addArguments("--headless","window-size=1024,768","--no-sandbox","--incognito");
-		driver=new ChromeDriver();
+		//option.addArguments("--headless");
+		option.addArguments("window-size=1024,768");
+		option.addArguments("--no-sandbox");
+		option.addArguments("--disable-dev-shm-usage");
+		
+		driver=new ChromeDriver(option);
 		driver.get("https://www.google.com");
 		System.out.println("--------------------");
 		System.out.println(driver.getTitle());
