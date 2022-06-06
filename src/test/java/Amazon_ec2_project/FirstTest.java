@@ -16,7 +16,7 @@ public class FirstTest {
 		System.setProperty("webDriver.chrome.driver"," /usr/bin/google-chrome");
 		ChromeOptions option =new ChromeOptions();
 		option.addArguments("--headless","window-size=1024,768","--no-sandbox");
-		driver=new ChromeDriver(option);
+		driver=new ChromeDriver();
 		driver.get("https://www.google.com");
 		System.out.println("--------------------");
 		System.out.println(driver.getTitle());
