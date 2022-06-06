@@ -15,7 +15,7 @@ public class FirstTest {
 		WebDriver driver;
 		System.setProperty("webDriver.chrome.driver"," /usr/bin/google-chrome");
 		ChromeOptions option =new ChromeOptions();
-		//option.addArguments("--headless");
+		option.addArguments("--headless");
 		option.addArguments("window-size=1024,768");
 		option.addArguments("--no-sandbox");
 		option.addArguments("--disable-dev-shm-usage");
